@@ -3,9 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eocument</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Document</title>
   </head>
   <body>
+    <main>
       <h1>Proyecto M1</h1>
+      <section id="aboutMe">
+        <h2>Sobre mi</h2>
+        <p>Soy Maximiliano Full Stack Developer</p>
+      </section>
+
+      <section id="techFav">
+        <h2>Tecnologias favoritas</h2>
+
+        <div class="containerCards">
+          <ul class="list">
+            <li>
+              <img src="./assets/img/html.png" alt="HTML logo" />
+            </li>
+
+            <li>
+              <img src="./assets/img/CSS.png" alt="CSS logo" />
+            </li>
+
+            <li>
+              <img src="./assets/img/js.png" alt="JAVASCRIPT logo" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="actFav">
+        <h2>Mis actividades favoritas</h2>
+
+        <form id="actForm">
+          <fieldset>
+            <label for="title">Título:</label>
+            <input id="title" type="text" placeholder="Crea tu titulo" />
+
+            <label for="imagen">Imagen:</label>
+            <input id="imagen" type="url" placeholder="URL de imagen" />
+
+            <label for="description">Descripción:</label>
+            <textarea id="description" placeholder="Describe la actividad"></textarea>
+
+            <button id="addButton">Crear actividad</button>
+          </fieldset>
+        </form>
+
+        <div id="actDiv">
+          
+        </div>
+
+      </section>
+    </main>
   </body>
 </html>
